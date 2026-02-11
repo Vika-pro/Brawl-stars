@@ -1,4 +1,8 @@
 <style type="text/css">
+	@font-face {
+		font-family: myfont;
+		src : url(1.ttf)
+	}
 	.parent-box {
 		height: 2025px;
 		background: grey;
@@ -24,8 +28,9 @@
 	.b-text {
 		color: black;
 		margin-left: 250px;
-		margin-top: 100px;
+		margin-top: 10px;
 		font-size: 50px;
+		font-family: lucida sans unicode;
 	}
 	.t-center2 {
 		text-align: center;
@@ -39,6 +44,11 @@
 	.t-size {
 		font-size: 55px;
 	}
+	.txt {
+		text-align: center; 
+		font-size: 90px; 
+		font-family: comic sans ms;
+	}
 	.g-box {
 		height: 1200px; 
 		width: 2500px; 
@@ -47,11 +57,36 @@
 		margin-right: auto; 
 		margin-top: 400px;
 	}
+	.fighter {
+		height: 700px; 
+		background: #5D00FF; 
+		width: 500px; 
+		border-radius: 50px; 
+		margin-left: 50px; 
+		margin-top: 50px;
+		transition: 0.6s;
+		color: white;
+	}
+	.fighter:hover {
+		background: green;
+		height: 720px;
+		width: 520px;
+		color: red;
+		font-family: arial;
+	}
+	.img {
+	height: 400px; 
+	width: 500px; 
+	background: red;
+	}
+	.img:hover {
+		background: green;
+	}
 </style>
 <div class="parent-box">
 	<div class="baby-box">
 		<div class="t-center">
-			<b>Всё о бравл старс</b>
+			<h3 style="font-family: lucida console">Всё о бравл старс</h3>
 		</div>
 		<div style="display: flex;">
 			<h1 class="b-text" style="margin-left: 300px;">Персонажи</h1>
@@ -61,7 +96,7 @@
 	</div>
 	<div class="baby-box2">
 		<div class="t-center2">
-		<b>
+		<b style="font-family: franklin gothic medium;">
 			Персонажи
 		</b>	
 		</div>
@@ -70,7 +105,7 @@
 		</div>
 		<a href="https://brawltime.ninja/ru/tier-list/brawler" class="t-size">Узнать больше</a>
 		<div class="t-center2">
-		<b>
+		<b style="font-family: franklin gothic medium;">
 			Смысл игры
 		</b>
 		</div>
@@ -79,7 +114,7 @@
 		</div>
 		<a href="https://brawlstars.fandom.com/ru/wiki/%D0%A2%D0%B0%D0%BA%D1%82%D0%B8%D0%BA%D0%B0_%D0%B8%D0%B3%D1%80%D1%8B" class="t-size">Узнать больше</a>
 		<div class="t-center2">
-			<b>
+			<b style="font-family: franklin gothic medium;">
 			Интересные факты
 			</b>
 		</div>
@@ -95,31 +130,27 @@
 </div>
 <div class="g-box">
 	<div style="background: #0015FF; height: 400px; width: 2500px">
-		<h1 style="margin-left: 20px; margin-top: 20px; font-size: 90px;">Бойцы</h1>
-		</div>
-		<div style="display: flex;">
-			<div style="height: 700px; background: #5D00FF; width: 500px; border-radius: 50px; margin-left: 50px; margin-top: 50px;">
-			<h1 style="text-align: center; font-size: 90px; color: white;">8-бит</h1>
-			<div style="height: 400px; width: 500px; background: #5D00FF">
+		<h1 style="margin-left: 20px; margin-top: 20px; font-size: 90px; font-family: cursive;">Бойцы</h1>
+	</div>
+	<div style="display: flex;">
+		<div class="fighter">
+			<h1 class="txt">8-бит</h1>				
 			<a href="https://brawlstars.fandom.com/ru/wiki/8-%D0%91%D0%98%D0%A2"><img src="2.png" style="height: 400px; width: 500px;"></a>
 		</div>
-	</div>
-		<div style="height: 700px; background: #5D00FF; width: 500px; border-radius: 50px; margin-left: 50px; margin-top: 50px;">
-			<h1 style="text-align: center; font-size: 90px; color: white;">Амбер</h1>
-			<div style="height: 400px; width: 400px; margin-left: auto; margin-right: auto; background: #5D00FF">
+		<div class="fighter">
+			<h1 class="txt">Амбер</h1>
+	
 			<a href="https://brawlstars.fandom.com/ru/wiki/%D0%90%D0%BC%D0%B1%D0%B5%D1%80"><img src="3.png" style="height: 400px; width: 400px; margin-left: auto; margin-right: auto;"></a>
 		</div>
-	</div>
-		<div style="height: 700px; background: #5D00FF; width: 500px; border-radius: 50px; margin-left: 50px; margin-top: 50px;">
-			<h1 style="text-align: center; font-size: 90px; color: white;">Анжело</h1>
-			<div style="height: 400px; width: 500px; background: #5D00FF">
-			<a href="https://brawlstars.fandom.com/ru/wiki/%D0%90%D0%BD%D0%B4%D0%B6%D0%B5%D0%BB%D0%BE"><img src="4.png" style="height: 400px; width: 500px;"></a>
+
+		<div class="fighter">
+				<h1 class="txt">Анджело</h1>					
+				<a href="https://brawlstars.fandom.com/ru/wiki/%D0%90%D0%BD%D0%B4%D0%B6%D0%B5%D0%BB%D0%BE"><img src="4.png" style="height: 400px; width: 500px;"></a>
+		
 		</div>
-	</div>
-		<div style="height: 700px; background: #5D00FF; width: 500px; border-radius: 50px; margin-left: 50px; margin-top: 50px;">
-			<h1 style="text-align: center; font-size: 90px; color: white;">Эш</h1>
-			<div style="height: 400px; width: 500px; background: #5D00FF">
-			<a href="https://brawlstars.fandom.com/ru/wiki/%D0%AD%D1%88"><img src="5.png" style="height: 400px; width: 500px;"></a>
+		<div class="fighter">
+				<h1 class="txt">Эш</h1>
+				<a href="https://brawlstars.fandom.com/ru/wiki/%D0%AD%D1%88"><img src="5.png" style="height: 400px; width: 500px;"></a>
 		</div>
 	</div>
 </div>
